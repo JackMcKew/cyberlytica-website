@@ -1,3 +1,5 @@
+@import "styles/colours.css";
+@import "styles/navigation.css";
 body {
   font-family: monospace;
   font-size: 100%;
