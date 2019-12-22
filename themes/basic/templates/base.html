@@ -25,8 +25,22 @@
             _self
             {%- endif -%}
        {%- endmacro %}
-       <title>{{ SITENAME }}{% block title %}{% endblock %}</title>
 </head>
 <body>
-       {% include "navigation.html" %}
+       {% include "partial/navigation.html" %}
+
+
+       {% block content %}
+       {% endblock %}
+
+
+       <!-- <script src="{{ SITEURL }}/theme/js/jquery.slim.min.js"></script> -->
+       <!-- <script src="{{ SITEURL }}/theme/js/popper.min.js"></script> -->
+       <script src="{{ SITEURL }}/theme//js/bootstrap.min.js"></script>
+       <script src="{{ SITEURL }}/theme/js/particles.min.js"></script>
+       <script>
+              particlesJS.load('particles-js', '{{ SITEURL }}/theme/particles.json', function() {
+                     console.log('callback - particles.js config loaded');
+              });
+       </script>
 </body>

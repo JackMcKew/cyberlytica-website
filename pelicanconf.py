@@ -4,6 +4,7 @@ from __future__ import unicode_literals
 
 AUTHOR = 'Jack McKew'
 SITENAME = 'Cyberlytica'
+SITETITLE = SITENAME
 SITEURL = 'http://localhost:8000'
 
 PATH = 'content'
@@ -22,10 +23,19 @@ AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = None
 
 # Blogroll
-LINKS = (('Pelican', 'http://getpelican.com/'),
-         ('Python.org', 'http://python.org/'),
-         ('Jinja2', 'http://jinja.pocoo.org/'),
-         ('You can modify those links in your config file', '#'),)
+# LINKS = (('Pelican', 'http://getpelican.com/'),
+#          ('Python.org', 'http://python.org/'),
+#          ('Jinja2', 'http://jinja.pocoo.org/'),
+#          ('You can modify those links in your config file', '#'),)
+
+LINKS = (
+    ("Home", "/"),
+    ("Our Services", "/"),
+    ("Past Projects", "/"),
+    ("About", "/"),
+)
+
+# STATIC_PATHS = ['static']
 
 # Social widget
 SOCIAL = (('You can add links in your config file', '#'),
