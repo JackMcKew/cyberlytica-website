@@ -8,12 +8,12 @@
        
        <link rel="stylesheet" href="{{ SITEURL }}/theme/css/bootstrap.min.css">
        <link rel="stylesheet" type="text/css" href="{{ SITEURL }}/theme/css/style.css" />
+       <link href="https://fonts.googleapis.com/css?family=Raleway:400,700&display=swap" rel="stylesheet">
        {% block meta %}
               <meta name="author" content="{{ AUTHOR }}" />
               <meta name="description" content="{{ SITEDESCRIPTION }}" />
               {% include "partial/og.html" %}
        {% endblock %}
-       <title>{{ SITENAME }}{% block title %}{% endblock %}</title>
        {% macro get_target(link) -%}
             {%- if LINKS_IN_NEW_TAB is not defined -%}
             _blank
@@ -25,6 +25,7 @@
             _self
             {%- endif -%}
        {%- endmacro %}
+       <title>{{ SITENAME }}{% block title %}{% endblock %}</title>
 </head>
 <body>
        {% include "navigation.html" %}
