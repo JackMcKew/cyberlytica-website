@@ -52,18 +52,64 @@
 <div id="particles-js"></div>
 
 <div class="jumbotron text-center">
-    <h1 class="display-4" id="jumbo-text" data-typeit-id="ab9onq44u5o">
-        <span style="display:inline;position:relative;font:inherit;color:inherit;line-height:inherit;" class="ti-wrapper">
-          <span style="display:inline;position:relative;font:inherit;color:inherit;line-height:inherit;" class="ti-container">Software Company in Newcastle Australia</span>
-        <span style="display:inline;position:relative;font:inherit;color:inherit;line-height:inherit;left: -.25ch;" class="ti-cursor">|</span></span>
-        </h1>
-    
-    <a class="btn btn-lg" href="/install/win/" role="button" id="get-started-btn">Get Started</a>
+    <h1 class="display-4" id="jumbo-text">
+      Freelance Digital Services in Newcastle, Australia
+        <!-- <span style="display:inline;position:relative;font:inherit;color:inherit;line-height:inherit;" class="ti-wrapper"> -->
+          <!-- <span style="display:inline;position:relative;font:inherit;color:inherit;line-height:inherit;" class="ti-container">Software Company in Newcastle Australia</span> -->
+        <!-- <span style="display:inline;position:relative;font:inherit;color:inherit;line-height:inherit;left: -.25ch;" class="ti-cursor">|</span></span> -->
+    </h1>
+    <p class="services"><b>Our Services</b></p>
+    <p class="type-services" id="services-text">WRITE HERE PLEASE</p>
+    <a class="btn btn-lg contact" href="/contact" role="button" id="contact-btn">Contact Us</a>
 </div>
 
 
+<script src="https://vibrant-mayer-d513c6.netlify.com/theme/js/typeit.min.js"></script>
+<script>
+  function jumboText() {
+    
+    document.getElementById("jumbo-text").innerText = "";
+    new TypeIt('#jumbo-text', {
+      speed: 50,
+      startDelay: 900,
+      // loop: true,
+      waitUntilVisible: true,
+    })
+    .type('Cyberlytica')
+    .pause(500)
+    .options({speed: 100, deleteSpeed: 75})
+    .delete(50)
+    .type('Freelance Digital Services in Newcastle, Australia')
+    .pause(2000)
+    .go();
+  }
 
-       <script src="https://vibrant-mayer-d513c6.netlify.com/theme//js/bootstrap.min.js"></script>
+  function type_writer() {
+    document.getElementById("services-text").innerText = "";
+    new TypeIt('#services-text', {
+      speed: 50,
+      startDelay:900,
+      loop: true,
+      waitUntilVisible: true,
+    })
+    .type('Data Analytics')
+    .pause(1000)
+    .options({speed: 100, deleteSpeed: 75})
+    .delete(9)
+    .type('Visualization')
+    .pause(1000)
+    .delete(13)
+    .type('Automation')
+    .pause(1000)
+    .go();
+  }
+
+  // jumboText();
+  type_writer();
+</script>
+
+       <script src="https://vibrant-mayer-d513c6.netlify.com/theme/js/jquery.slim.min.js"></script>
+       <script src="https://vibrant-mayer-d513c6.netlify.com/theme/js/bootstrap.min.js"></script>
        <script src="https://vibrant-mayer-d513c6.netlify.com/theme/js/particles.min.js"></script>
        <script>
               particlesJS.load('particles-js', 'https://vibrant-mayer-d513c6.netlify.com/theme/particles.json', function() {
