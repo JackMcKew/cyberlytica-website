@@ -6,8 +6,8 @@
        <meta name="HandheldFriendly" content="True" />
        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
        
-       <link rel="stylesheet" href="https://vibrant-mayer-d513c6.netlify.com/theme/css/bootstrap.min.css">
-       <link rel="stylesheet" type="text/css" href="https://vibrant-mayer-d513c6.netlify.com/theme/css/style.css" />
+       <link rel="stylesheet" href="http://localhost:8000/theme/css/bootstrap.min.css">
+       <link rel="stylesheet" type="text/css" href="http://localhost:8000/theme/css/style.css" />
        <link href="https://fonts.googleapis.com/css?family=Raleway:400,700&display=swap" rel="stylesheet">
               <meta name="author" content="Jack McKew" />
               <meta name="description" content="" />
@@ -16,14 +16,14 @@
 <meta property="og:title" content="Cyberlytica"/>
 <meta property="og:description" content=""/>
 <meta property="og:locale" content="en_US"/>
-<meta property="og:url" content="https://vibrant-mayer-d513c6.netlify.com"/>
+<meta property="og:url" content="http://localhost:8000"/>
 </head>
 <body>
 <nav class="navbar navbar-expand-lg navbar-light">
     <!-- <a class="navbar-brand" href="/">
         <img src="/assets/images/espanso.svg" class="logo-img">
     </a> -->
-    <h1><a href="https://vibrant-mayer-d513c6.netlify.com">Cyberlytica</a></h1>
+    <h1><a href="http://localhost:8000">Cyberlytica</a></h1>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
@@ -64,7 +64,7 @@
 </div>
 
 
-<script src="https://vibrant-mayer-d513c6.netlify.com/theme/js/typeit.min.js"></script>
+<script src="http://localhost:8000/theme/js/typeit.min.js"></script>
 <script>
   function jumboText() {
     
@@ -87,32 +87,33 @@
   function type_writer() {
     document.getElementById("services-text").innerText = "";
     new TypeIt('#services-text', {
+      strings: ['Data Analytics','Data Visualisation', 'Data Automation','Software Development (Web & Desktop)','Solution Architecture','Personalized Education Courses'],
       speed: 50,
       startDelay:900,
-      loop: true,
+      // loop: true,
       waitUntilVisible: true,
-    })
-    .type('Data Analytics')
-    .pause(1000)
-    .options({speed: 100, deleteSpeed: 75})
-    .delete(9)
-    .type('Visualization')
-    .pause(1000)
-    .delete(13)
-    .type('Automation')
-    .pause(1000)
-    .go();
+    }).go();
+    // .type('Data Analytics')
+    // .pause(1000)
+    // .options({speed: 100, deleteSpeed: 75})
+    // .delete(9)
+    // .type('Visualization')
+    // .pause(1000)
+    // .delete(13)
+    // .type('Automation')
+    // .pause(1000)
+    // .go();
   }
 
   // jumboText();
   type_writer();
 </script>
 
-       <script src="https://vibrant-mayer-d513c6.netlify.com/theme/js/jquery.slim.min.js"></script>
-       <script src="https://vibrant-mayer-d513c6.netlify.com/theme/js/bootstrap.min.js"></script>
-       <script src="https://vibrant-mayer-d513c6.netlify.com/theme/js/particles.min.js"></script>
+       <script src="http://localhost:8000/theme/js/jquery.slim.min.js"></script>
+       <script src="http://localhost:8000/theme/js/bootstrap.min.js"></script>
+       <script src="http://localhost:8000/theme/js/particles.min.js"></script>
        <script>
-              particlesJS.load('particles-js', 'https://vibrant-mayer-d513c6.netlify.com/theme/particles.json', function() {
+              particlesJS.load('particles-js', 'http://localhost:8000/theme/particles.json', function() {
                      console.log('callback - particles.js config loaded');
               });
        </script>

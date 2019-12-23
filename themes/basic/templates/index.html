@@ -40,21 +40,22 @@
   function type_writer() {
     document.getElementById("services-text").innerText = "";
     new TypeIt('#services-text', {
+      strings: ['Data Analytics','Data Visualisation', 'Data Automation','Software Development (Web & Desktop)','Solution Architecture','Personalized Education Courses'],
       speed: 50,
       startDelay:900,
-      loop: true,
+      // loop: true,
       waitUntilVisible: true,
-    })
-    .type('Data Analytics')
-    .pause(1000)
-    .options({speed: 100, deleteSpeed: 75})
-    .delete(9)
-    .type('Visualization')
-    .pause(1000)
-    .delete(13)
-    .type('Automation')
-    .pause(1000)
-    .go();
+    }).go();
+    // .type('Data Analytics')
+    // .pause(1000)
+    // .options({speed: 100, deleteSpeed: 75})
+    // .delete(9)
+    // .type('Visualization')
+    // .pause(1000)
+    // .delete(13)
+    // .type('Automation')
+    // .pause(1000)
+    // .go();
   }
 
   // jumboText();
