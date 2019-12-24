@@ -18,7 +18,7 @@
 
 .top-div {
     position: relative;
-    background: url("https://vibrant-mayer-d513c6.netlify.com/theme/images/background_up.svg") top center no-repeat;
+    background: url("http://localhost:8000/theme/images/background_up.svg") top center no-repeat;
     background-size: cover;
     color: white;
     padding: 120px 0px 0px 0px;
@@ -26,7 +26,7 @@
 
 .bottom-div {
     position: relative;
-    background: url("https://vibrant-mayer-d513c6.netlify.com/theme/images/background_down.svg") bottom center no-repeat;
+    background: url("http://localhost:8000/theme/images/background_down.svg") bottom center no-repeat;
     background-size: cover;
     color: white;
     padding: 120px 0px 0px 0px;
@@ -39,6 +39,7 @@
 
 .type-services {
     margin-bottom: auto;
+    padding-bottom: 25px;
 }
 
 
