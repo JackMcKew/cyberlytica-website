@@ -5,8 +5,8 @@ from __future__ import unicode_literals
 AUTHOR = 'Jack McKew'
 SITENAME = 'Cyberlytica'
 SITETITLE = SITENAME
-SITEURL = 'http://localhost:8000'
-# SITEURL = 'https://vibrant-mayer-d513c6.netlify.com/'
+# SITEURL = 'http://localhost:8000'
+SITEURL = 'https://vibrant-mayer-d513c6.netlify.com/'
 
 PATH = 'content'
 
