@@ -32,8 +32,9 @@ AUTHOR_FEED_RSS = None
 LINKS = (
     ("Home", "/"),
     ("Our Services", "/"),
-    ("Past Projects", "/"),
     ("About", "/"),
+    ('Feedback','/'),
+    ("Blog", "/"),
 )
 
 # STATIC_PATHS = ['static']
