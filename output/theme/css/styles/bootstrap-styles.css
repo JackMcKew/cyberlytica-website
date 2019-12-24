@@ -16,3 +16,12 @@
         height: 150px;
     }
 }
+
+.row {
+    margin-left: -10px;
+    margin-right: -10px;
+}
+
+.col-md-4 {
+    padding: 25px;
+}
