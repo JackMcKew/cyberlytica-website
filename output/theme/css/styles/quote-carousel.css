@@ -1,0 +1,10 @@
+.carousel-item.active,
+.carousel-item-next,
+.carousel-item-prev{
+  display:block;
+}
+
+.carousel-control-prev-icon
+{
+  fill: var(--main-bg-color);
+}
