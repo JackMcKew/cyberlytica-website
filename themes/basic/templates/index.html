@@ -1,7 +1,10 @@
 {% extends "base.html" %} {% block content %}
 
 <div id="particles-js"></div>
-
+<!-- Remaining TODO
+    - Interactie Contact Form
+    - Content
+-->
 <div class="jumbotron text-center" id="home">
   <h1 class="display-4" id="jumbo-text">
     Freelance Digital Services
@@ -20,8 +23,8 @@
   </div>
 </div>
 
-<div class="top-div"></div>
-<div class="container-fluid services-div" id="about">
+<div class="top-div" id="about"></div>
+<div class="container-fluid services-div">
   <div class="container">
     <div class="row justify-content-center">
       <h2>About</h2>
@@ -85,15 +88,15 @@
     </div>
   </div>
 </div>
-<div class="bottom-div"></div>
+<div class="bottom-div" id="services"></div>
 
-<div class="container" id="services">
+<div class="container">
   <div class="row justify-content-center">
     <h2>Our Services</h2>
   </div>
   <div class="row d-flex align-items-center">
     <div class="col-sm-6 col-md-6">
-      <img src="{{ SITEURL }}/theme/images/img3.jpg" />
+      <img class="service-icon" src="{{ SITEURL }}/theme/images/data-analytics.svg" />
     </div>
     <div class="col-sm-6 col-md-6">
       <h2>Data Analytics</h2>
@@ -104,7 +107,7 @@
   <div class="row d-flex">
     <div class="order-sm-2 col-sm-6 col-md-6">
       <!--   HERE   -->
-      <img src="{{ SITEURL }}/theme/images/img2.jpg" />
+      <img class="service-icon" src="{{ SITEURL }}/theme/images/data-visualisation.svg" />
     </div>
     <div class="order-sm-1 col-sm-6 col-md-6">
       <!--   HERE   -->
@@ -116,7 +119,7 @@
   <div class="row d-flex">
     <div class="col-sm-6 col-md-6">
       <!--   HERE   -->
-      <img src="{{ SITEURL }}/theme/images/img2.jpg" />
+      <img class="service-icon" src="{{ SITEURL }}/theme/images/data-automation.svg" />
     </div>
     <div class="col-sm-6 col-md-6">
       <!--   HERE   -->
@@ -128,7 +131,7 @@
   <div class="row d-flex">
     <div class="order-sm-2 col-sm-6 col-md-6">
       <!--   HERE   -->
-      <img src="{{ SITEURL }}/theme/images/img2.jpg" />
+      <img class="service-icon" src="{{ SITEURL }}/theme/images/software-development.svg" />
     </div>
     <div class="order-sm-1 col-sm-6 col-md-6">
       <!--   HERE   -->
@@ -140,7 +143,7 @@
   <div class="row d-flex">
     <div class="col-sm-6 col-md-6">
       <!--   HERE   -->
-      <img src="{{ SITEURL }}/theme/images/img2.jpg" />
+      <img class="service-icon" src="{{ SITEURL }}/theme/images/solution-architecture.svg" />
     </div>
     <div class="col-sm-6 col-md-6">
       <!--   HERE   -->
@@ -152,7 +155,7 @@
   <div class="row d-flex">
     <div class="order-sm-2 col-sm-6 col-md-6">
       <!--   HERE   -->
-      <img src="{{ SITEURL }}/theme/images/img2.jpg" />
+      <img class="service-icon" src="{{ SITEURL }}/theme/images/education.svg" />
     </div>
     <div class="order-sm-1 col-sm-6 col-md-6">
       <!--   HERE   -->
@@ -163,8 +166,8 @@
   </div>
 </div>
 
-<div class="top-div"></div>
-<div class="container-fluid services-div" id="feedback">
+<div class="top-div" id="feedback"></div>
+<div class="container-fluid services-div">
   <div class="container">
     <div class="row justify-content-center">
       <h2>Feedback</h2>
@@ -212,9 +215,9 @@
     </div>
   </div>
 </div>
-<div class="bottom-div"></div>
+<div class="bottom-div" id="team"></div>
 
-<div class="container" id="team">
+<div class="container">
   <div class="row justify-content-center">
       <h2>Meet the Founder</h2>
       <div class="row d-flex align-items-center">
@@ -250,10 +253,58 @@
 
 <div class="top-div"></div>
 <div class="container-fluid services-div" id="footer">
-  <div class="row justify-content-center">
-    <h2>Footer details</h2>
+  <div class="row">
+
+    <!-- Footer Location -->
+    <div class="col-lg-4 mb-5 mb-lg-0 text-center">
+      <h4 class="text-uppercase mb-4">Location</h4>
+      <p> Based in Newcastle, Australia
+      </p>
+    </div>
+
+    <!-- Footer Social Icons -->
+    <div class="col-lg-4 mb-5 mb-lg-0 text-center">
+      <h4 class="text-uppercase mb-4">Around the Web</h4>
+      <a class="btn btn-outline-light btn-social mx-1" href="https://twitter.com/Jac_McQ">
+        <i class="fab fa-fw fa-twitter"></i>
+      </a>
+      <a class="btn btn-outline-light btn-social mx-1" href="https://www.linkedin.com/in/jack-mckew/">
+        <i class="fab fa-fw fa-linkedin-in"></i>
+      </a>
+      <a class="btn btn-outline-light btn-social mx-1" href="https://github.com/JackMcKew">
+        <i class="fab fa-fw fa-github"></i>
+      </a>
+    </div>
+
+    <!-- Footer About Text -->
+    <div class="col-lg-4 text-center">
+      <h4 class="text-uppercase mb-4">About Cyberlytica</h4>
+      <p>
+        Cyberlytica is an registered Australian company<br>
+        ABN: 2073 2126 434
+      </p>
+    </div>
+
   </div>
+  <div class="row justify-content-center icons">
+      <p>
+      Icons made by
+      <a href="https://www.flaticon.com/authors/payungkead" title="Payungkead">Payungkead</a>, 
+      <a href="https://www.flaticon.com/authors/eucalyp" title="Eucalyp">Eucalyp</a>, 
+      <a href="https://www.flaticon.com/authors/becris" title="Becris">Becris</a>, 
+      <a href="https://www.flaticon.com/authors/dave-gandy" title="Dave Gandy">Dave Gandy</a>, 
+      <a href="https://www.flaticon.com/authors/geotatah" title="geotatah">geotatah</a> 
+      from 
+      <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
+      </p>
+    
+      <p class="bottom-paragraph">Designed and created by <a href="{{ SITEURL }}" target="_blank">Cyberlytica</a>. Copyright © <a href="{{ SITEURL }}" target="_blank">Cyberlytica</a> 2019</p>
+    </div>
 </div>
+
+<a href="tel:+61431670387" class="mbscreenphone phonelink btn btn-info btn-lg">
+          <span class="glyphicon glyphicon-earphone"></span> Call Us
+        </a>
 
 <script src="{{ SITEURL }}/theme/js/typeit.min.js"></script>
 <script>
