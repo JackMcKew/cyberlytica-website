@@ -40,6 +40,8 @@
 .type-services {
     margin-bottom: auto;
     padding-bottom: 25px;
+    display: block;
+    height: 150px;
 }
 
 

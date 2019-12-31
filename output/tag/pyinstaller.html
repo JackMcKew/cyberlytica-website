@@ -33,19 +33,19 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav ml-auto">
             <li>
-                <a class="nav-link" target="_blank" href="/" >Home</a>
+                <a class="nav-link" target="_blank" href="/#home" >Home</a>
             </li>
             <li>
-                <a class="nav-link" target="_blank" href="/" >Our Services</a>
+                <a class="nav-link" target="_blank" href="/#about" >About</a>
             </li>
             <li>
-                <a class="nav-link" target="_blank" href="/" >About</a>
+                <a class="nav-link" target="_blank" href="/#services" >Our Services</a>
             </li>
             <li>
-                <a class="nav-link" target="_blank" href="/" >Feedback</a>
+                <a class="nav-link" target="_blank" href="/#feedback" >Feedback</a>
             </li>
             <li>
-                <a class="nav-link" target="_blank" href="/" >Blog</a>
+                <a class="nav-link" target="_blank" href="/#team" >Team</a>
             </li>
         <li class="nav-item">
             <a class="nav-link btn" href="#contact">Contact Us</a>
@@ -57,7 +57,7 @@
 
 <div id="particles-js"></div>
 
-<div class="jumbotron text-center">
+<div class="jumbotron text-center" id="home">
   <h1 class="display-4" id="jumbo-text">
     Freelance Digital Services
     <!-- <span style="display:inline;position:relative;font:inherit;color:inherit;line-height:inherit;" class="ti-wrapper"> -->
@@ -70,21 +70,24 @@
   <a class="btn btn-lg contact" href="/contact" role="button" id="contact-btn"
     >Contact Us</a
   >
+  <div class="row justify-content-center">
+    <a href="#about" class="contact-btn">Scroll to discover more</a>
+  </div>
 </div>
 
 <div class="top-div"></div>
-<div class="container-fluid services-div">
+<div class="container-fluid services-div" id="about">
   <div class="container">
     <div class="row justify-content-center">
       <h2>About</h2>
     </div>
     <div class="row justify-content-center">
       <div class="col-md-4 text-center">
-        <i class="fas fa-users"></i>
+        <i class="fas fa-users pillar-symbol"></i>
         <!-- <span class="pillar-symbol-1"></span> -->
-        <h2 class="home-column-title" itemprop="headline">
+        <h3 class="home-column-title" itemprop="headline">
           Strategy &amp; Consulting
-        </h2>
+        </h3>
         <p>
           <strong>
             Everything extraordinary starts with a clear, comprehensive
@@ -99,10 +102,10 @@
         </p>
       </div>
       <div class="col-md-4 text-center">
-        <i class="fas fa-cogs"></i>
-        <h2 class="home-column-title" itemprop="headline">
+        <i class="fas fa-cogs pillar-symbol"></i>
+        <h3 class="home-column-title" itemprop="headline">
           Design &amp; Development
-        </h2>
+        </h3>
         <p>
           <strong
             >As geeky but fun nerds, we love design, branding, code, and
@@ -117,10 +120,10 @@
         </p>
       </div>
       <div class="col-md-4 text-center">
-        <i class="fas fa-headset"></i>
-        <h2 class="home-column-title" itemprop="headline">
+        <i class="fas fa-headset pillar-symbol"></i>
+        <h3 class="home-column-title" itemprop="headline">
           Training &amp; Support
-        </h2>
+        </h3>
         <p>
           <strong
             >Get the extra help you need, and get it done right, on time, and in
@@ -139,11 +142,11 @@
 </div>
 <div class="bottom-div"></div>
 
-<div class="container">
+<div class="container" id="services">
   <div class="row justify-content-center">
     <h2>Our Services</h2>
   </div>
-  <div class="row d-flex">
+  <div class="row d-flex align-items-center">
     <div class="col-sm-6 col-md-6">
       <img src="http://localhost:8000/theme/images/img3.jpg" />
     </div>
@@ -216,7 +219,7 @@
 </div>
 
 <div class="top-div"></div>
-<div class="container-fluid services-div">
+<div class="container-fluid services-div" id="feedback">
   <div class="container">
     <div class="row justify-content-center">
       <h2>Feedback</h2>
@@ -266,13 +269,14 @@
 </div>
 <div class="bottom-div"></div>
 
-<div class="container">
+<div class="container" id="team">
   <div class="row justify-content-center">
       <h2>Meet the Founder</h2>
-      <div class="row d-flex">
+      <div class="row d-flex align-items-center">
         <div class="col-sm-6 col-md-6">
-          <img src="http://localhost:8000/theme/images/img3.jpg" />
+          <img class="team-photo" src="http://localhost:8000/theme/images/jm-photo.jpg" />
         </div>
+
         <div class="col-sm-6 col-md-6">
           <h2>Jack McKew</h2>
           <p><strong>Founder</strong></p>
@@ -298,62 +302,13 @@
   </div>
 </div>
 
-<!-- <div class="container">
-  <div class="row justify-content-center">
-    <h2>Blog</h2>
-  </div>
-  <div class="row d-flex">
-    <div class="col-sm-6 col-md-6">
-      <img src="http://localhost:8000/theme/images/img3.jpg" />
-    </div>
-    <div class="col-sm-6 col-md-6">
-      <h2>Jack McKew - Founder</h2>
-      <p><strong>Blog</strong></p>
-      <p>Found at <a href="https://jackmckew.dev/">Jack McKew's Blog</a></p>
-    </div>
-  </div>
-</div> -->
 
 <div class="top-div"></div>
-<div class="container-fluid services-div">
+<div class="container-fluid services-div" id="footer">
   <div class="row justify-content-center">
     <h2>Footer details</h2>
   </div>
 </div>
-<!-- 
-<div class="container-fluid services-div">
-  <div class="container">
-    <div class="row justify-content-center">
-      <h2>Blog Roll goes here</h2>
-    </div>
-    <div class="row justify-content-md-center">
-      <div class="col-md-3 m-3 service-btn">
-        <p>I need help</p>
-        <h4>Analysing Data</h4>
-      </div>
-      <div class="col-md-3 m-3 service-btn">
-        <p>I need help</p>
-        <h4>Visualising Data</h4>
-      </div>
-      <div class="col-md-3 m-3 service-btn">
-        <p>I want to</p>
-        <h4>Automate Processes</h4>
-      </div>
-      <div class="col-md-3 m-3 service-btn">
-        <p>I need help with</p>
-        <h4>Software Development</h4>
-      </div>
-      <div class="col-md-3 m-3 service-btn">
-        <p>I need help with</p>
-        <h4>Solution Architecture</h4>
-      </div>
-      <div class="col-md-3 m-3 service-btn">
-        <p>I want a</p>
-        <h4>Personalized Education Course</h4>
-      </div>
-    </div>
-  </div>
-</div> -->
 
 <script src="http://localhost:8000/theme/js/typeit.min.js"></script>
 <script>
@@ -407,6 +362,32 @@
   type_writer();
 </script>
        <script src="http://localhost:8000/theme/js/jquery-3.4.1.min.js"></script>
+       <script>
+              $(document).ready(function(){
+                // Add smooth scrolling to all links
+                $("a").on('click', function(event) {
+              
+                  // Make sure this.hash has a value before overriding default behavior
+                  if (this.hash !== "") {
+                    // Prevent default anchor click behavior
+                    event.preventDefault();
+              
+                    // Store hash
+                    var hash = this.hash;
+              
+                    // Using jQuery's animate() method to add smooth page scroll
+                    // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+                    $('html, body').animate({
+                      scrollTop: $(hash).offset().top
+                    }, 800, function(){
+              
+                      // Add hash (#) to URL when done scrolling (default click behavior)
+                      window.location.hash = hash;
+                    });
+                  } // End if
+                });
+              });
+       </script>
        <!-- <script src="http://localhost:8000/theme/js/jquery.slim.min.js"></script> -->
        <script src="http://localhost:8000/theme/js/bootstrap.min.js"></script>
        <script src="http://localhost:8000/theme/js/particles.min.js"></script>

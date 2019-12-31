@@ -30,11 +30,11 @@ AUTHOR_FEED_RSS = None
 #          ('You can modify those links in your config file', '#'),)
 
 LINKS = (
-    ("Home", "/"),
-    ("Our Services", "/"),
-    ("About", "/"),
-    ('Feedback','/'),
-    ("Blog", "/"),
+    ("Home", "/#home"),
+    ("About", "/#about"),
+    ("Our Services", "/#services"),
+    ('Feedback','/#feedback'),
+    ("Team", "/#team"),
 )
 
 # STATIC_PATHS = ['static']
