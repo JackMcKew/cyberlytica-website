@@ -2,7 +2,7 @@
 name = "cyberlytica-website"
 version = "0.1.0"
 description = ""
-authors = ["Fizban <jackmckew2@gmail.com>"]
+authors = ["Jack McKew <jackmckew2@gmail.com>"]
 
 [tool.poetry.dependencies]
 python = "^3.7"
