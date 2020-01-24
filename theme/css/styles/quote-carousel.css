@@ -8,3 +8,9 @@
 {
   fill: var(--main-bg-color);
 }
+
+.carousel-item
+{
+  width: 75%;
+  margin-left: 15%;
+}
