@@ -8,6 +8,11 @@ SITETITLE = SITENAME
 # SITEURL = 'http://localhost:8000'
 # SITEURL = 'https://vibrant-mayer-d513c6.netlify.com'
 SITEURL = 'https://cyberlytica.com.au'
+# EXTRA_PATH_METADATA = {
+#     'extra/favicon.ico': {'path': 'favicon.ico'},
+# }
+
+FAVICON = "/img/favicon.ico"
 
 PATH = 'content'
 

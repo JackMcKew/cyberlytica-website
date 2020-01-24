@@ -14,6 +14,10 @@
        <link rel="stylesheet" href="{{ SITEURL }}/theme/css/bootstrap.min.css">
        <link rel="stylesheet" type="text/css" href="{{ SITEURL }}/theme/css/style.css" />
        <link href="https://fonts.googleapis.com/css?family=Raleway:400,700&display=swap" rel="stylesheet">
+       {% if FAVICON %}
+              <link rel="shortcut icon" href="{{ FAVICON }}" type="image/x-icon">
+              <link rel="icon" href="{{ FAVICON }}" type="image/x-icon"> 
+       {% endif %} 
        {% block meta %}
               <meta name="author" content="{{ AUTHOR }}" />
               <meta name="description" content="{{ SITEDESCRIPTION }}" />
