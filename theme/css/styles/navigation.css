@@ -7,5 +7,6 @@
 .navbar .logo-img {
     height: 150px;
     margin: 10px 0 0 5px;
+    width: auto;
 }
 
